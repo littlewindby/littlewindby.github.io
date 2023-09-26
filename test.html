@@ -1,49 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <style>
-      body {
-        margin: 0
-      }
-      #app {
-        font-family: sans-serif;
-        background-image: url("C:\Users\lanti\Desktop\test\backgroud.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="app"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
-    <!-- <script src="src/index.js"></script> -->
-    <script type= text/javascript>
-      var $el = $("#app");
-      $el.ripples({
-        resolution: 412,
-        dropRadius: 10,
-        perturbance: 0.01,
-      });
-      $el.ripples("show");
-      function randomDrop() {
-        var x = Math.random() * $el.outerWidth();
-        var y = Math.random() * $el.outerHeight();
-        var dropRadius = 10;
-        var strength = 0.01 + Math.random() * 0.02;
-        $el.ripples('drop', x, y, dropRadius, strength);
-      }
-      for (let index = 0; index < 3; index++) {
-        randomDrop();
-      }
-      setInterval(function() {
-        randomDrop();
-      }, 3000);
-    </script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+   Testing 
+</body>
 </html>
